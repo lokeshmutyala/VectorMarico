@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">VectorMarico</string>
+    <string-array name="spinner_array">
+        <item>AUD999</item>
+        <item>MAR21</item>
+        <item>MAR22</item>
+        <item>MAR23</item>
+        <item>MAR24</item>
+        <item>MAR25</item>
+        <item>MAR26</item>
+        <item>MAR27</item>
+        <item>MAR28</item>
+        <item>MAR29</item>
+        <item>MAR30</item>
+    </string-array>
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in </string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyBqpOKi1lGYH-JyftOLAepNKXSvEXm7qYQ
+    </string>
+    <string name="sendotp_key">135111AqWcCa6g58624e6e</string>
+    <string name="title_activity_dummy_navigation">dummy_navigation</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+</resources>

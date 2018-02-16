@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		
+		<title>Map Path</title>
+
+		<link rel="stylesheet" href="bootstrap-3.3.4/css/bootstrap.css" media="screen" type="text/css" />
+		<!--<link rel="stylesheet" href="css/style.css" media="screen" type="text/css">-->
+    	<script type="text/javascript" src="plugins/jquery-1.11.2.min.js"></script>
+     	<!--<script type="text/javascript" src="cordova.js"></script>-->
+     	<script src="bootstrap-3.3.4/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="plugins/maps.google.com.maps.api.js"></script>
+			<link rel="stylesheet" href="materialize.min.css">
+             <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+			<script src="materialize.min.js"></script>
+                        <script src="moment.min.js"></script>
+        <script src="admin_audit_details.js"></script>
+        <!--<script src="js/global.js"></script>-->
+  </head>
+  <body>
+      
+
+<div class="row">
+<div class="col s12">
+    <label>Agent Select</label>
+  <select class="browser-default" id="agent_select" onchange="agent_select(this)">
+    <option value="MAR21">MAR21</option>
+    <option value="MAR22">MAR22</option>
+    <option value="MAR23">MAR23</option>
+    <option value="MAR24">MAR24</option>
+    <option value="MAR25">MAR25</option>
+    <option value="MAR26">MAR26</option>
+    <option value="MAR27">MAR27</option>
+    <option value="MAR28">MAR28</option>
+    <option value="MAR29">MAR29</option>
+    <option value="MAR30">MAR30</option>
+    <option value="total" selected="selected">Total</option>
+  </select>
+  </div>
+    <div class="col s6">
+         <label>From</label>
+    <input type="date" id="from_datepicker" class="datepicker" onchange="date_change(event);">
+</div>
+    <div class="col s6">
+         <label>To</label>
+    <input type="date" id="to_datepicker" class="datepicker" onchange="to_date_change(event);">
+</div>
+    </div>
+
+<!--        <div style="margin-left: 34px;"><b>Coordinates</b>
+       
+      <input name="datatype" type="radio" value="store_agent_path" id="path" checked/>
+      <label for="path">Stores</label>
+       <input name="datatype" type="radio" value="agent_coordinates" id="coordinates" />
+      <label for="coordinates">Path</label>
+   
+    </div>-->
+
+      <br>
+      <br>
+           <div class="tables"></div>
+  </body>
+</html>
+
+

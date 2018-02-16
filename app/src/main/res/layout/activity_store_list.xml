@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pad"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/_5sdp"
+    android:paddingRight="@dimen/_5sdp"
+    tools:context="com.adjointtechnologies.vectormarico.StoreListActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/root_layout"
+        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="List View"
+        android:id="@+id/listview"
+        android:alpha="0.5"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_weight="0.5"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Map View"
+        android:layout_weight="0.5"
+        android:id="@+id/mapview"
+        android:clickable="false"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_alignParentRight="true"/>
+
+</LinearLayout>
+    <include layout="@layout/content_main" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map1"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        tools:context="com.adjointtechnologies.vector.service.StoreListActivity"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_37sdp"
+        android:apiKey="AIzaSyBqpOKi1lGYH-JyftOLAepNKXSvEXm7qYQ"
+        />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/refresh_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:src="@drawable/refresh_64_r"
+            app:backgroundTint="@color/common_google_signin_btn_text_dark_pressed"
+            app:fabSize="normal" />
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/navigate_list"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:src="@drawable/navigation"
+            app:fabSize="normal"
+            android:visibility="gone"/>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/request_image_list"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:src="@drawable/picture_64"
+            app:backgroundTint="@color/common_google_signin_btn_text_dark_pressed"
+            android:visibility="gone"
+            app:fabSize="normal"/>
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+    <include layout="@layout/footer"/>
+</android.support.design.widget.CoordinatorLayout>
